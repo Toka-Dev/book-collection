@@ -1,0 +1,6 @@
+@import '../node_modules/semantic-ui-css/semantic.css';
+
+#plar {
+    padding-left: 10px;
+    padding-right: 10px;
+}
