@@ -3,7 +3,7 @@ import useBookApi from './BookApi'
 import LoadingSpinner from './LoadingSpinner';
 
 /**
- * Used the BookApi to get an array of all books
+ * Uses the BookApi to get an array of all books
  * 
  * @returns statistical data about all books or the component LoadingSpinner
  */
@@ -11,7 +11,7 @@ export default function FactsAndFigures() {
 
     const bookList = useBookApi('get', 'books');
 
-    //Set Guard: Use const bookList and return facts and figures only if BookApi had send the response
+    //Set Guard: Uses const bookList and returns facts and figures only if BookApi has send the response
     if(!bookList) {
         return <LoadingSpinner name="Bücherliste"/>
     }
@@ -54,7 +54,7 @@ export default function FactsAndFigures() {
                     {statisticalDataObject().totalBooks}
                 </div>
                 <div className="ui horizontal divider">
-                    AND
+                    UND
                 </div>
                 <div className="label">
                     Durchschnittliche Bewertung
@@ -63,7 +63,7 @@ export default function FactsAndFigures() {
                     {statisticalDataObject().averageRating.toFixed(2)}
                 </div>
                 <div className="ui horizontal divider">
-                    AND
+                    UND
                 </div>
                 <div className="label">
                     Älteste Veröffentlichung
@@ -72,7 +72,7 @@ export default function FactsAndFigures() {
                     {dateTimeFormat.format(new Date(statisticalDataObject().oldestBook))}
                 </div>
                 <div className="ui horizontal divider">
-                    AND
+                    UND
                 </div>
                 <div className="label">
                     Neueste Veröffentlichung

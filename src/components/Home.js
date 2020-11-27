@@ -2,9 +2,9 @@ import React from 'react';
 import SVGRing from './SVGRing';
 
 /**
- * Home page of the 
+ * Home page of the application
  * 
- * @returns general information about the appliction and the component SVGRing
+ * @returns general information about the application and the component SVGRing
  */
 export default function Home() {
     return (

@@ -6,7 +6,7 @@ import Css from './BookList.module.css';
 import { useParams } from 'react-router-dom';
 
 /**
- * Used the BookApi to get an array of all books
+ * Uses the BookApi to get an array of all books
  * 
  * @returns a list with all books or the component LoadingSpinner
  */
@@ -15,7 +15,7 @@ export default function BookList() {
     const isbn = useParams().isbn;
     const bookList = useBookApi('get', 'books');
 
-    //Set Guard: Use const bookList and return bookListItems only if BookApi had send the response
+    //Set Guard: Uses const bookList and returns bookListItems only if BookApi has send the response
     if(!bookList) {
         return <LoadingSpinner name='Bücherliste'/>
     }

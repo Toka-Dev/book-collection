@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 /**
- * Shows the cover, title, authors, date of published and rating of the book
+ * Shows the cover, title, authors, release date and rating of the book
  * 
  * @param {object} props, one book object
  * @returns one book with some information as a link for more details

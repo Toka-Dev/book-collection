@@ -2,8 +2,8 @@ import React from 'react'
 import { Link, useLocation, useParams } from 'react-router-dom'
 
 /**
- * Show a single thumbnail of a book
- * Used the routing library hooks - useParams and useLocation -
+ * Shows a single thumbnail of a book
+ * Uses the routing library hooks - useParams and useLocation -
  * to get the appropriate thumbnail
  * 
  * @returns one thumbnail

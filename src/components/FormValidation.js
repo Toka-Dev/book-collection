@@ -3,7 +3,7 @@
  */
 
 /**
- * Useful to checked the validity of an input
+ * Useful to check the validity of an input
  * 
  * @param {string} inputString, string to be checked
  * @param {number} minLength, min length of the inputString
@@ -34,7 +34,7 @@ export default function checkInputString(inputString, minLength = 1, maxLength =
 /**
  * Useful to clean up incorrect entries
  * 
- * @param {array} authorsArray, array to be cleared
+ * @param {array} authorsArray, array to be cleaned
  * @returns cleaned array of authors
  */
 export function clearEmptyAuthor(authorsArray) {
@@ -65,7 +65,7 @@ export function clearEmptyAuthor(authorsArray) {
 /**
  * Useful to clean up incorrect entries
  * 
- * @param {array} thumbnailArray, array to be cleared
+ * @param {array} thumbnailArray, array to be cleaned
  * @returns cleaned array of thumbnails
  */
 export function clearEmptyThumbnail(thumbnailArray) {

@@ -5,7 +5,7 @@ import LoadingSpinner from './LoadingSpinner';
 
 /**
  * Detail view of a book
- * Used the BookApi to get one special book
+ * Uses the BookApi to get one special book
  * 
  * @returns detailed information about one book or the component LoadingSpinner
  */
@@ -15,7 +15,7 @@ export default function BookDetails() {
     const book = useBookApi('get', `book/${isbn}`)
     const history = useHistory();
     
-    //Set Guard: Use const book and return bookdetails only if BookApi had send the response
+    //Set Guard: Uses const book and returns bookdetails only if BookApi has send the response
     if(!book) {
         return <LoadingSpinner name='Buch' />
     }

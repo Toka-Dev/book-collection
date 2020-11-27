@@ -5,7 +5,7 @@ import checkInputString, { clearEmptyAuthor,clearEmptyThumbnail } from './FormVa
 /**
  * Adds a new book to the collection
  * 
- * @returns a form with some informations that a new book can have
+ * @returns a form with some information that a new book can have
  */
 export default function AddBook() {
     
